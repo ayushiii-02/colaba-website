@@ -1,0 +1,61 @@
+<!-- ================= EXPLORE SECTION ================= -->
+<section class="section-explore">
+  <div class="container">
+    <div class="explore-wrapper">
+
+      <!-- Section Title -->
+      <div class="explore-header">
+        <h2 class="explore-title">Explore COLABA Interface</h2>
+      </div>
+
+      <!-- Main Layout -->
+      <div class="explore-layout">
+
+        <!-- Left Side - Tabs -->
+        <div class="explore-left">
+          <div class="explore-tabs">
+
+            <!-- Radio Controls -->
+            <input type="radio" name="exploreTabs" id="tab-1" checked>
+            <input type="radio" name="exploreTabs" id="tab-2">
+
+            <!-- Vertical Rail + Indicator -->
+            <div class="explore-rail" aria-hidden="true">
+              <div class="explore-indicator"></div>
+            </div>
+
+            <!-- Tab Item 1 -->
+            <label class="explore-item item-1" for="tab-1">
+              <div class="explore-item-title">
+                A central panel showing recent<br />
+                automation tasks
+              </div>
+              <div class="explore-item-desc">
+                Active bots, failed tasks, and shop-specific performance. Collaboration stats across multiple time frames daily, weekly, monthly, yearly. Enables seamless switching and full visibility across your brand network.
+              </div>
+            </label>
+
+            <!-- Tab Item 2 -->
+            <label class="explore-item item-2" for="tab-2">
+              <div class="explore-item-title">
+                Dashboard displaying all connected<br />
+                TikTok Shops in one view
+              </div>
+              <div class="explore-item-desc">
+                View all connected shops in one dashboard and quickly track performance across your network.
+              </div>
+            </label>
+
+          </div>
+        </div>
+
+        <!-- Right Side - Image -->
+        <div class="explore-right">
+          <img src="assets/image 11.png" alt="COLABA Dashboard Preview" class="explore-image" />
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>

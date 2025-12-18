@@ -1,0 +1,182 @@
+/* =========================
+   EXPLORE SECTION
+========================= */
+.section-explore {
+  padding: 80px 0;
+}
+
+.explore-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/* =========================
+   EXPLORE HEADER
+========================= */
+.explore-header {
+  text-align: center;
+}
+
+.explore-title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 57.8px;
+  letter-spacing: -1.2px;
+  color: #000;
+}
+
+/* =========================
+   EXPLORE LAYOUT
+========================= */
+.explore-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* =========================
+   EXPLORE LEFT - TABS
+========================= */
+.explore-left {
+  flex: 0 0 420px;
+}
+
+.explore-tabs {
+  position: relative;
+  padding-left: 28px;
+}
+
+.explore-tabs input {
+  display: none;
+}
+
+/* Rail Line */
+.explore-rail {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(55, 125, 246, 0.25);
+  border-radius: 2px;
+}
+
+/* Blue Indicator */
+.explore-indicator {
+  position: absolute;
+  left: -1px;
+  top: 6px;
+  width: 4px;
+  height: 52px;
+  border-radius: 4px;
+  background: #377DF6;
+  transition: top 0.3s ease;
+}
+
+/* Tab Items */
+.explore-item {
+  display: block;
+  cursor: pointer;
+  padding: 6px 0;
+  margin-bottom: 16px;
+}
+
+.explore-item-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25.6px;
+  letter-spacing: -0.2px;
+  color: #0A0A0A;
+  opacity: 0.35;
+  transition: opacity 0.3s ease;
+}
+
+.explore-item-desc {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #6B7280;
+  max-width: 390px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+/* Tab 1 Active */
+#tab-1:checked ~ .item-1 .explore-item-title {
+  opacity: 1;
+}
+
+#tab-1:checked ~ .item-1 .explore-item-desc {
+  max-height: 200px;
+  opacity: 1;
+}
+
+#tab-1:checked ~ .explore-rail .explore-indicator {
+  top: 6px;
+}
+
+/* Tab 2 Active */
+#tab-2:checked ~ .item-2 .explore-item-title {
+  opacity: 1;
+}
+
+#tab-2:checked ~ .item-2 .explore-item-desc {
+  max-height: 200px;
+  opacity: 1;
+}
+
+#tab-2:checked ~ .explore-rail .explore-indicator {
+  top: 80px;
+}
+
+/* =========================
+   EXPLORE RIGHT - IMAGE
+========================= */
+.explore-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.explore-image {
+  width: 100%;
+  max-width: 860px;
+  height: auto;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+  .explore-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .explore-left {
+    flex: none;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .explore-right {
+    justify-content: center;
+  }
+
+  .explore-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .explore-title {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+}
