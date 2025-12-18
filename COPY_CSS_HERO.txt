@@ -1,15 +1,9 @@
-/* =========================
-   RESET
-========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* =========================
-   PAGE
-========================= */
 body {
   background: #F1F7FF;
   position: relative;
@@ -20,9 +14,6 @@ body {
   overflow-y: auto;
 }
 
-/* =========================
-   CONTAINER
-========================= */
 .container {
   width: 100%;
   max-width: 1440px;
@@ -30,16 +21,10 @@ body {
   padding: 0 100px;
 }
 
-/* =========================
-   SITE HEADER
-========================= */
 .site-header {
   width: 100%;
 }
 
-/* =========================
-   ANNOUNCEMENT BAR
-========================= */
 .announcement-wrapper {
   width: 100%;
 }
@@ -49,20 +34,15 @@ body {
   height: 40px;
   background-color: #3B82F6;
   color: #ffffff;
-
   padding: 8px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-
   font-size: 13px;
   font-weight: 500;
 }
 
-/* =========================
-   HEADER MAIN
-========================= */
 .header-main {
   display: flex;
   align-items: center;
@@ -71,9 +51,6 @@ body {
   padding-bottom: 30px;
 }
 
-/* =========================
-   LOGO
-========================= */
 .header-logo {
   flex-shrink: 0;
 }
@@ -84,9 +61,6 @@ body {
   object-fit: contain;
 }
 
-/* =========================
-   NAVIGATION MENU
-========================= */
 .nav-menu {
   display: flex;
   align-items: center;
@@ -100,37 +74,26 @@ body {
   font-weight: 500;
 }
 
-/* =========================
-   HEADER ACTIONS
-========================= */
 .header-actions {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-/* =========================
-   ENGLISH BUTTON
-========================= */
 .english-btn {
   width: 165px;
   height: 56px;
-
   padding: 16px 32px;
   border-radius: 12px;
   border: none;
-
   background-color: #ffffff;
   color: #0A0A0A;
-
   display: flex;
   align-items: center;
   gap: 6px;
-
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
 }
 
@@ -144,30 +107,21 @@ body {
   height: 16px;
 }
 
-/* =========================
-   SIGN IN BUTTON
-========================= */
 .signin-btn {
   width: 136px;
   height: 56px;
-
   padding: 16px 32px;
   border-radius: 12px;
   border: none;
-
   background-color: #377DF6;
   color: #ffffff;
-
   display: flex;
   align-items: center;
   gap: 4px;
-
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
-
   white-space: nowrap;
 }
 
@@ -176,12 +130,11 @@ body {
   height: 20px;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
 .section-hero {
   padding-top: 60px;
-  padding-bottom: 100px;
+  padding-bottom: 250px;
+  position: relative;
+  overflow: visible;
 }
 
 .hero-wrapper {
@@ -191,21 +144,14 @@ body {
   position: relative;
 }
 
-/* =========================
-   HERO CONTENT (LEFT)
-========================= */
 .hero-content {
   flex: 0 0 554px;
   padding-top: 100px;
 }
 
-/* =========================
-   HERO TEXT FRAME
-========================= */
 .hero-text-frame {
   max-width: 554px;
   width: 100%;
-
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -221,15 +167,11 @@ body {
 .hero-text-frame p {
   color: #060606;
   opacity: 0.7;
-
   font-size: 16px;
   line-height: 1.6;
   max-width: 480px;
 }
 
-/* =========================
-   HERO BUTTONS
-========================= */
 .hero-buttons {
   display: flex;
   align-items: center;
@@ -242,11 +184,9 @@ body {
   padding: 0 24px;
   border-radius: 12px;
   border: none;
-
   display: flex;
   align-items: center;
   gap: 8px;
-
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -268,59 +208,38 @@ body {
   height: 18px;
 }
 
-/* =========================
-   HERO VISUAL (RIGHT)
-========================= */
 .hero-visual {
-  flex: 0 0 441px;
+  flex: 0 0 500px;
   position: relative;
+  min-height: 700px;
 }
 
-/* =========================
-   HERO IMAGE
-========================= */
 .hero-image {
   width: 441px;
-  height: 576px;
+  height: 620px;
   object-fit: cover;
+  object-position: top;
 }
 
-/* =========================
-   STATS SECTION
-========================= */
-.section-stats {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 410px;
-  z-index: 10;
+.section-stats,
+.section-collaboration,
+.section-inbox {
+  display: none;
 }
 
-.section-stats .container {
-  display: flex;
-  justify-content: center;
-}
-
-/* =========================
-   STATS FRAME
-========================= */
 .stats-frame {
   position: absolute;
-  left: 731px;
-  top: 0;
-
+  left: -140px;
+  top: 280px;
+  z-index: 10;
   width: 264.72px;
   height: 136.96px;
-
   padding: 25.35px;
   border-radius: 19.01px;
-
   background-color: #FFFFFF;
-
   display: flex;
   justify-content: space-between;
   gap: 12.68px;
-
   box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
 }
 
@@ -347,37 +266,19 @@ body {
   color: #22C55E;
 }
 
-/* =========================
-   COLLAB SECTION
-========================= */
-.section-collaboration {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 599px;
-  z-index: 10;
-}
-
-/* =========================
-   TARGETED COLLABORATIONS FRAME
-========================= */
 .collab-frame {
   position: absolute;
-  left: 855px;
-  top: 0;
-
+  left: 0;
+  top: 470px;
+  z-index: 10;
   width: 315.31px;
   height: 173.64px;
-
   padding: 25.35px;
   border-radius: 19.01px;
-
   background-color: #FFFFFF;
-
   display: flex;
   flex-direction: column;
   gap: 12.68px;
-
   box-shadow: 0px 14px 32px rgba(0, 0, 0, 0.12);
 }
 
@@ -426,36 +327,18 @@ body {
   color: #2FBA7F;
 }
 
-/* =========================
-   INBOX SECTION
-========================= */
-.section-inbox {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 370px;
-  z-index: 10;
-}
-
-/* =========================
-   INBOX FRAME
-========================= */
 .inbox-frame {
   position: absolute;
-  left: 1155px;
-  top: 0;
-
+  right: -50px;
+  top: 240px;
+  z-index: 10;
   width: 150.53px;
   height: 177.39px;
-
   padding: 25.35px;
   border-radius: 19.01px;
-
   background-color: #FFFFFF;
-
   display: flex;
   flex-direction: column;
-
   box-shadow: 0px 14px 32px rgba(0, 0, 0, 0.12);
 }
 
@@ -490,9 +373,6 @@ body {
   width: 100%;
 }
 
-/* =========================
-   TRUST SECTION
-========================= */
 .section-trust {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -505,9 +385,6 @@ body {
   gap: 32px;
 }
 
-/* =========================
-   TRUST BADGE
-========================= */
 .trust-badge {
   display: flex;
   flex-direction: column;
@@ -543,155 +420,115 @@ body {
   font-weight: 400;
 }
 
-/* =========================
-   TRUSTED BRANDS IMAGE
-========================= */
 .brands-image {
   width: 606px;
   height: 36px;
   object-fit: contain;
 }
 
-/* =========================
-   SECTION SEPARATOR
-========================= */
 .section-separator {
   width: calc(100% - 200px);
   height: 1px;
   margin: 0 100px;
-
   border: none;
   background-color: #3D3D3D;
   opacity: 0.25;
 }
 
-/* =========================
-   RESPONSIVE - 1280px
-========================= */
 @media (max-width: 1280px) {
   .container {
     padding: 0 60px;
   }
-
+  .hero-visual {
+    flex: 0 0 450px;
+  }
   .hero-image {
     width: 380px;
     height: auto;
   }
-
   .stats-frame {
-    left: auto;
-    right: 300px;
+    left: -100px;
   }
-
-  .collab-frame {
-    left: auto;
-    right: 100px;
-  }
-
   .inbox-frame {
-    left: auto;
-    right: 40px;
+    right: 0;
   }
 }
 
-/* =========================
-   RESPONSIVE - 1024px
-========================= */
 @media (max-width: 1024px) {
   .nav-menu {
     display: none;
   }
-
   .hero-wrapper {
     flex-direction: column;
     align-items: center;
   }
-
   .hero-content {
     flex: none;
     width: 90%;
     text-align: center;
     padding-top: 40px;
   }
-
   .hero-text-frame {
     max-width: 100%;
     align-items: center;
   }
-
   .hero-buttons {
     justify-content: center;
   }
-
   .hero-visual {
     flex: none;
     margin-top: 40px;
+    min-height: auto;
   }
-
   .hero-image {
     width: 420px;
     height: auto;
   }
-
-  .section-stats,
-  .section-collaboration,
-  .section-inbox {
-    position: relative;
-    top: auto;
-  }
-
   .stats-frame,
   .collab-frame,
   .inbox-frame {
     position: relative;
     left: auto;
     right: auto;
+    top: auto;
     margin: 24px auto;
+  }
+  .section-hero {
+    padding-bottom: 60px;
   }
 }
 
-/* =========================
-   RESPONSIVE - 768px
-========================= */
 @media (max-width: 768px) {
   .container {
     padding: 0 20px;
   }
-
   .header-actions {
     display: none;
   }
-
   .hero-text-frame h1 {
     font-size: 32px;
     line-height: 1.3;
   }
-
   .hero-text-frame p {
     font-size: 15px;
   }
-
   .hero-buttons {
     flex-direction: column;
     width: 100%;
   }
-
   .hero-buttons button {
     width: 100%;
     justify-content: center;
   }
-
   .hero-image {
     width: 100%;
     max-width: 320px;
   }
-
   .stats-frame,
   .collab-frame,
   .inbox-frame {
     width: 90%;
   }
-
   .section-separator {
     width: calc(100% - 40px);
     margin: 0 20px;

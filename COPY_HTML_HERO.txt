@@ -90,77 +90,56 @@
     <!-- Hero Visual -->
     <div class="hero-visual">
       <img src="assets/im.png" alt="Hero Visual" class="hero-image" />
-    </div>
 
-  </div>
-</section>
-
-<!-- ================= STATS SECTION ================= -->
-<section class="section-stats">
-  <div class="container">
-
-    <div class="stats-frame">
-      <div class="stat-item">
-        <span class="stat-label">GMV</span>
-        <span class="stat-value">1,161,402.54</span>
-        <span class="stat-growth">▲ 2,031.87%</span>
-      </div>
-
-      <div class="stat-item">
-        <span class="stat-label">SKU Orders</span>
-        <span class="stat-value">31,511</span>
-        <span class="stat-growth">▲ 1,175%</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= COLLAB SECTION ================= -->
-<section class="section-collaboration">
-  <div class="container">
-
-    <div class="collab-frame">
-      <div class="collab-header">
-        <span class="collab-icon">📘</span>
-        <span class="collab-title">Targeted Collaborations</span>
-      </div>
-
-      <div class="collab-stats">
-        <div class="collab-item">
-          <span class="collab-label">Affiliate GMV</span>
-          <span class="collab-value">$791.35</span>
-          <span class="collab-growth">▲ 55.45%</span>
+      <!-- Stats Frame -->
+      <div class="stats-frame">
+        <div class="stat-item">
+          <span class="stat-label">GMV</span>
+          <span class="stat-value">1,161,402.54</span>
+          <span class="stat-growth">▲ 2,031.87%</span>
         </div>
-
-        <div class="collab-item">
-          <span class="collab-label">Affiliate items sold</span>
-          <span class="collab-value">51</span>
-          <span class="collab-growth">▲ 50.69%</span>
+        <div class="stat-item">
+          <span class="stat-label">SKU Orders</span>
+          <span class="stat-value">31,511</span>
+          <span class="stat-growth">▲ 1,175%</span>
         </div>
       </div>
-    </div>
 
-  </div>
-</section>
-
-<!-- ================= INBOX SECTION ================= -->
-<section class="section-inbox">
-  <div class="container">
-
-    <div class="inbox-frame">
-      <div class="inbox-header">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inbox-icon">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3.75h6m-6 3.75h3M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9Z" />
-        </svg>
-        <span class="inbox-title">Inbox</span>
+      <!-- Collab Frame -->
+      <div class="collab-frame">
+        <div class="collab-header">
+          <span class="collab-icon">📘</span>
+          <span class="collab-title">Targeted Collaborations</span>
+        </div>
+        <div class="collab-stats">
+          <div class="collab-item">
+            <span class="collab-label">Affiliate GMV</span>
+            <span class="collab-value">$791.35</span>
+            <span class="collab-growth">▲ 55.45%</span>
+          </div>
+          <div class="collab-item">
+            <span class="collab-label">Affiliate items sold</span>
+            <span class="collab-value">51</span>
+            <span class="collab-growth">▲ 50.69%</span>
+          </div>
+        </div>
       </div>
 
-      <div class="inbox-item">All (4000)</div>
-      <div class="divider"></div>
-      <div class="inbox-item">Unread (62)</div>
-      <div class="divider"></div>
-      <div class="inbox-item">Unreplied (816)</div>
+      <!-- Inbox Frame -->
+      <div class="inbox-frame">
+        <div class="inbox-header">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inbox-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3.75h6m-6 3.75h3M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9Z" />
+          </svg>
+          <span class="inbox-title">Inbox</span>
+        </div>
+        <div class="inbox-item">All (4000)</div>
+        <div class="divider"></div>
+        <div class="inbox-item">Unread (62)</div>
+        <div class="divider"></div>
+        <div class="inbox-item">Unreplied (816)</div>
+      </div>
+
     </div>
 
   </div>

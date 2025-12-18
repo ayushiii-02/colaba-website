@@ -184,7 +184,9 @@ body {
 ========================= */
 .section-hero {
   padding-top: 60px;
-  padding-bottom: 100px;
+  padding-bottom: 250px;
+  position: relative;
+  overflow: visible;
 }
 
 .hero-wrapper {
@@ -281,8 +283,9 @@ body {
    HERO VISUAL (RIGHT)
 ========================= */
 .hero-visual {
-  flex: 0 0 441px;
+  flex: 0 0 500px;
   position: relative;
+  min-height: 700px;
 }
 
 /* =========================
@@ -290,24 +293,18 @@ body {
 ========================= */
 .hero-image {
   width: 441px;
-  height: 576px;
+  height: 620px;
   object-fit: cover;
+  object-position: top;
 }
 
 /* =========================
-   STATS SECTION
+   HIDE FLOATING SECTIONS (Cards inside hero-visual now)
 ========================= */
-.section-stats {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 410px;
-  z-index: 10;
-}
-
-.section-stats .container {
-  display: flex;
-  justify-content: center;
+.section-stats,
+.section-collaboration,
+.section-inbox {
+  display: none;
 }
 
 /* =========================
@@ -315,8 +312,9 @@ body {
 ========================= */
 .stats-frame {
   position: absolute;
-  left: 731px;
-  top: 0;
+  left: -140px;
+  top: 280px;
+  z-index: 10;
 
   width: 264.72px;
   height: 136.96px;
@@ -361,23 +359,13 @@ body {
 }
 
 /* =========================
-   COLLAB SECTION
-========================= */
-.section-collaboration {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 599px;
-  z-index: 10;
-}
-
-/* =========================
    TARGETED COLLABORATIONS FRAME
 ========================= */
 .collab-frame {
   position: absolute;
-  left: 855px;
-  top: 0;
+  left: 0;
+  top: 470px;
+  z-index: 10;
 
   width: 315.31px;
   height: 173.64px;
@@ -446,23 +434,13 @@ body {
 }
 
 /* =========================
-   INBOX SECTION
-========================= */
-.section-inbox {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 370px;
-  z-index: 10;
-}
-
-/* =========================
    INBOX FRAME
 ========================= */
 .inbox-frame {
   position: absolute;
-  left: 1155px;
-  top: 0;
+  right: -50px;
+  top: 240px;
+  z-index: 10;
 
   width: 150.53px;
   height: 177.39px;
@@ -599,24 +577,21 @@ body {
     padding: 0 60px;
   }
 
+  .hero-visual {
+    flex: 0 0 450px;
+  }
+
   .hero-image {
     width: 380px;
     height: auto;
   }
 
   .stats-frame {
-    left: auto;
-    right: 300px;
-  }
-
-  .collab-frame {
-    left: auto;
-    right: 100px;
+    left: -100px;
   }
 
   .inbox-frame {
-    left: auto;
-    right: 40px;
+    right: 0;
   }
 }
 
@@ -652,18 +627,12 @@ body {
   .hero-visual {
     flex: none;
     margin-top: 40px;
+    min-height: auto;
   }
 
   .hero-image {
     width: 420px;
     height: auto;
-  }
-
-  .section-stats,
-  .section-collaboration,
-  .section-inbox {
-    position: relative;
-    top: auto;
   }
 
   .stats-frame,
@@ -672,7 +641,12 @@ body {
     position: relative;
     left: auto;
     right: auto;
+    top: auto;
     margin: 24px auto;
+  }
+
+  .section-hero {
+    padding-bottom: 60px;
   }
 }
 
