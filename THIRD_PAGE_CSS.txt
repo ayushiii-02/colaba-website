@@ -5,18 +5,12 @@
   padding: 80px 0;
 }
 
-.features-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 48px;
-}
-
 /* =========================
    FEATURES HEADER
 ========================= */
 .features-header {
   text-align: center;
+  margin-bottom: 48px;
 }
 
 .third-page-title {
@@ -28,16 +22,11 @@
 }
 
 /* =========================
-   FEATURES CARDS
+   SWIPER - FULL WIDTH
 ========================= */
-.features-cards {
-  width: 100%;
-  overflow: hidden;
-}
-
 .mySwiper {
   width: 100%;
-  padding: 20px 0;
+  overflow: hidden;
 }
 
 .mySwiper .swiper-wrapper {
@@ -47,7 +36,6 @@
 .mySwiper .swiper-slide {
   width: 280px;
   height: 320px;
-  display: flex;
 }
 
 /* =========================
@@ -137,7 +125,6 @@
   width: 16px;
   height: 16px;
   color: #377DF6;
-  flex: 0 0 auto;
 }
 
 /* =========================
