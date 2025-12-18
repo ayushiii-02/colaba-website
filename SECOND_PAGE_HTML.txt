@@ -1,0 +1,55 @@
+<!-- ================= SECOND PAGE / OUTREACH SECTION ================= -->
+<section class="section-outreach">
+  <div class="container">
+    <div class="outreach-wrapper">
+
+      <!-- Section Header -->
+      <div class="outreach-header">
+        <h2 class="second-page-title">
+          Increase your outreach performance
+        </h2>
+        <p class="second-page-subtext">
+          Grow faster with Colaba's automation & creator data. We help brands double their
+          affiliate-driven revenue while saving 10x more time.
+        </p>
+      </div>
+
+      <!-- Metrics Bar -->
+      <div class="metrics-bar">
+
+        <div class="metric">
+          <div class="metric-value">3M+</div>
+          <div class="metric-label">Verified TikTok Affiliates</div>
+        </div>
+
+        <div class="metric-divider"></div>
+
+        <div class="metric">
+          <div class="metric-value">500K+</div>
+          <div class="metric-label">Affiliate Emails</div>
+        </div>
+
+        <div class="metric-divider"></div>
+
+        <div class="metric">
+          <div class="metric-value">10</div>
+          <div class="metric-label">Advanced Filters</div>
+        </div>
+
+        <div class="metric-divider"></div>
+
+        <div class="metric">
+          <div class="metric-value">0.1 SEC</div>
+          <div class="metric-label">Real-Time Analytics</div>
+        </div>
+
+      </div>
+
+      <!-- CTA Button -->
+      <div class="outreach-cta">
+        <button class="cta-btn">Book a demo</button>
+      </div>
+
+    </div>
+  </div>
+</section>
