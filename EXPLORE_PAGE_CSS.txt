@@ -8,7 +8,7 @@
 .explore-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 60px;
 }
 
 /* =========================
@@ -31,8 +31,9 @@
 ========================= */
 .explore-layout {
   display: flex;
-  align-items: flex-start;
-  gap: 60px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
 }
 
 /* =========================
@@ -137,13 +138,11 @@
 ========================= */
 .explore-right {
   flex: 1;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .explore-image {
   width: 100%;
-  max-width: 860px;
+  max-width: 750px;
   height: auto;
   border-radius: 16px;
   background: #fff;
@@ -157,16 +156,13 @@
   .explore-layout {
     flex-direction: column;
     align-items: center;
+    gap: 60px;
   }
 
   .explore-left {
     flex: none;
     width: 100%;
     max-width: 500px;
-  }
-
-  .explore-right {
-    justify-content: center;
   }
 
   .explore-image {
