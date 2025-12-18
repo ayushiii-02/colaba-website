@@ -1,0 +1,106 @@
+<!-- ================= PRICING SECTION ================= -->
+<section class="section-pricing">
+  <div class="container">
+    <div class="pricing-wrapper">
+
+      <!-- Gradient Card -->
+      <div class="gradient-card">
+
+        <!-- Header -->
+        <div class="pricing-header">
+          <h2 class="gradient-title">Pricing Plans</h2>
+          <h3 class="gradient-subtitle">Choose the Best Plan for Your Growth</h3>
+          <p class="gradient-desc">
+            Our AI-powered TikTok Shop affiliate automation offers flexible plans designed for brands, agencies, and power sellers looking to scale their reach effortlessly.
+          </p>
+        </div>
+
+        <!-- White Card with Pricing -->
+        <div class="white-card">
+          <div class="pricing-cards">
+
+            <!-- Basic Plan -->
+            <div class="price-card">
+              <div class="price-header">
+                <span class="plan-name">Basic</span>
+                <div class="plan-price">$49<span>/mo</span></div>
+                <p class="plan-desc">
+                  Your first step into TikTok Shop affiliate growth. Perfect for testing, learning, and launching.
+                </p>
+                <button class="plan-btn">Contact Sales</button>
+              </div>
+              <div class="plan-features">
+                <ul>
+                  <li>Link to 1 TikTok Shop</li>
+                  <li>1 Bot</li>
+                  <li>10,000 Collaborations, DM's or Emails monthly</li>
+                  <li>Unlimited CRM messages</li>
+                  <li>Creator list building</li>
+                  <li>5 Advanced Filters</li>
+                  <li>Most extensive affiliate database</li>
+                  <li>Customer support via Discord or Email</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="price-card">
+              <div class="price-header">
+                <span class="plan-name">Pro</span>
+                <div class="plan-price">$99<span>/mo</span></div>
+                <p class="plan-desc">
+                  Scale outreach and performance. For growing shops ready to convert faster.
+                </p>
+                <button class="plan-btn">Contact Sales</button>
+              </div>
+              <div class="plan-features">
+                <ul>
+                  <li>Link 2 TikTok Shops</li>
+                  <li>2 Bots for any Shop</li>
+                  <li>100,000 Collaborations, DM's or Emails monthly</li>
+                  <li>Unlimited CRM messages</li>
+                  <li>Creator list building</li>
+                  <li>10 Advanced Filters</li>
+                  <li>Affiliate Market Analytic Dashboard</li>
+                  <li>Most extensive affiliate database</li>
+                  <li>Customer support via Discord or Email</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Agency Plan (Active) -->
+            <div class="price-card active">
+              <div class="price-header">
+                <span class="plan-name">Agency</span>
+                <div class="plan-price">$199<span>/mo</span></div>
+                <p class="plan-desc">
+                  Maximum power for serious sellers & teams. All you need to manage multiple shops at scale.
+                </p>
+                <button class="plan-btn">Contact Sales</button>
+              </div>
+              <div class="plan-features">
+                <ul>
+                  <li>Link 2+ TikTok Shops</li>
+                  <li>2 Bots for each shop</li>
+                  <li>Unlimited Shops $39/mo shop + 2 Bots</li>
+                  <li>Unlimited DM's & Target Collaborations</li>
+                  <li>Unlimited Emails Monthly</li>
+                  <li>Unlimited CRM messages</li>
+                  <li>Creator list building</li>
+                  <li>10 Advanced Filters</li>
+                  <li>Affiliate Market Analytic Dashboard</li>
+                  <li>Most extensive affiliate database</li>
+                  <li>Add subaccounts for your team</li>
+                  <li>Premium support via WhatsApp</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+// Initialize Features Swiper - Continuous Infinite Loop
+const featuresSwiper = new Swiper('.featuresSwiper', {
+  spaceBetween: 20,
+  slidesPerView: 'auto',
+  loop: true,
+  loopAdditionalSlides: 4,
+  speed: 3000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  allowTouchMove: true,
+  grabCursor: true,
+});

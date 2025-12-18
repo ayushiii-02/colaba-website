@@ -11,26 +11,46 @@
    PAGE
 ========================= */
 body {
-  background: #F1F7FF; /* light blue like your screenshot */
+  background: #F1F7FF;
   position: relative;
   width: 100vw;
-  min-height: 100vh; /* ✅ IMPORTANT */
+  min-height: 100vh;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+/* =========================
+   SITE HEADER
+========================= */
+.site-header {
+  width: 100%;
+}
 
 /* =========================
    ANNOUNCEMENT BAR
 ========================= */
+.announcement-wrapper {
+  width: 100%;
+}
+
 .announcement-bar {
   width: 100%;
   height: 40px;
   background-color: #3B82F6;
   color: #ffffff;
 
-  padding: 8px 547px;
+  padding: 8px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,13 +61,24 @@ body {
 }
 
 /* =========================
+   HEADER MAIN
+========================= */
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* =========================
    LOGO
 ========================= */
-.logo {
-  position: absolute;
-  left: 100px;
-  top: 84px;
+.header-logo {
+  flex-shrink: 0;
+}
 
+.logo {
   width: 130px;
   height: 29px;
   object-fit: contain;
@@ -57,13 +88,6 @@ body {
    NAVIGATION MENU
 ========================= */
 .nav-menu {
-  position: absolute;
-  left: 292px;
-  top: 86px;
-
-  width: 540px;
-  height: 26px;
-
   display: flex;
   align-items: center;
   gap: 62px;
@@ -71,19 +95,24 @@ body {
 
 .nav-menu a {
   text-decoration: none;
-  color: #0A0A0A; /* Secondary color 950 */
+  color: #0A0A0A;
   font-size: 16px;
   font-weight: 500;
+}
+
+/* =========================
+   HEADER ACTIONS
+========================= */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 /* =========================
    ENGLISH BUTTON
 ========================= */
 .english-btn {
-  position: absolute;
-  left: 1028px;
-  top: 70px;
-
   width: 165px;
   height: 56px;
 
@@ -116,14 +145,11 @@ body {
   width: 16px;
   height: 16px;
 }
+
 /* =========================
    SIGN IN BUTTON
 ========================= */
 .signin-btn {
-  position: absolute;
-  left: 1205px;
-  top: 70px;
-
   width: 136px;
   height: 56px;
 
@@ -152,17 +178,38 @@ body {
   width: 20px;
   height: 20px;
 }
+
+/* =========================
+   HERO SECTION
+========================= */
+.section-hero {
+  padding-top: 60px;
+  padding-bottom: 250px;
+  position: relative;
+  overflow: visible;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* =========================
+   HERO CONTENT (LEFT)
+========================= */
+.hero-content {
+  flex: 0 0 554px;
+  padding-top: 100px;
+}
+
 /* =========================
    HERO TEXT FRAME
 ========================= */
 .hero-text-frame {
-  position: relative;
   max-width: 554px;
-  left: 100px;
-  top: 298px;
-
-  width: 554px;
-  height: 301px;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -186,17 +233,11 @@ body {
   line-height: 1.6;
   max-width: 480px;
 }
+
 /* =========================
    HERO BUTTONS
 ========================= */
 .hero-buttons {
-  position: absolute;
-  left: 0;
-  top: 245px;
-
-  width: 265px;
-  height: 56px;
-
   display: flex;
   align-items: center;
   gap: 12px;
@@ -237,26 +278,43 @@ body {
   width: 18px;
   height: 18px;
 }
+
 /* =========================
-   HERO RIGHT IMAGE
+   HERO VISUAL (RIGHT)
+========================= */
+.hero-visual {
+  flex: 0 0 500px;
+  position: relative;
+  min-height: 700px;
+}
+
+/* =========================
+   HERO IMAGE
 ========================= */
 .hero-image {
-  position: absolute;
-  left: 855px;
-  top: 157px;
-
   width: 441px;
-  height: 576px;
-
+  height: 620px;
   object-fit: cover;
+  object-position: top;
 }
+
 /* =========================
-   STATS FRAME (LEFT)
+   HIDE FLOATING SECTIONS (Cards inside hero-visual now)
+========================= */
+.section-stats,
+.section-collaboration,
+.section-inbox {
+  display: none;
+}
+
+/* =========================
+   STATS FRAME
 ========================= */
 .stats-frame {
   position: absolute;
-  left: 731px;
-  top: 410px;
+  left: -140px;
+  top: 280px;
+  z-index: 10;
 
   width: 264.72px;
   height: 136.96px;
@@ -297,15 +355,17 @@ body {
 /* Growth indicator */
 .stat-growth {
   font-size: 13px;
-  color: #22C55E; /* green growth */
+  color: #22C55E;
 }
+
 /* =========================
    TARGETED COLLABORATIONS FRAME
 ========================= */
 .collab-frame {
   position: absolute;
-  left: 855px;
-  top: 599px;
+  left: 0;
+  top: 470px;
+  z-index: 10;
 
   width: 315.31px;
   height: 173.64px;
@@ -372,13 +432,15 @@ body {
   font-size: 13px;
   color: #2FBA7F;
 }
+
 /* =========================
    INBOX FRAME
 ========================= */
 .inbox-frame {
   position: absolute;
-  left: 1155px;
-  top: 370px;
+  right: -50px;
+  top: 240px;
+  z-index: 10;
 
   width: 150.53px;
   height: 177.39px;
@@ -399,7 +461,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 14px; /* proper separation from list */
+  margin-bottom: 14px;
 }
 
 .inbox-icon {
@@ -418,9 +480,8 @@ body {
 .inbox-item {
   font-size: 14px;
   color: #060606;
-  padding: 6px 0; /* ✅ row breathing space */
+  padding: 6px 0;
 }
-
 
 /* Divider lines */
 .divider {
@@ -428,137 +489,26 @@ body {
   background-color: #E5E7EB;
   width: 100%;
 }
-@media (max-width: 1280px) {
-  .logo {
-    left: 60px;
-  }
 
-  .nav-menu {
-    left: 240px;
-    gap: 48px;
-  }
-
-  .english-btn {
-    left: auto;
-    right: 180px;
-  }
-
-  .signin-btn {
-    left: auto;
-    right: 40px;
-  }
-
-  .hero-text-frame {
-    left: 60px;
-  }
-
-  .hero-image {
-    left: auto;
-    right: 40px;
-    width: 380px;
-  }
+/* =========================
+   TRUST SECTION
+========================= */
+.section-trust {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-@media (max-width: 1024px) {
-  .nav-menu {
-    display: none; /* companies hide nav on tablet */
-  }
-
-  .hero-text-frame {
-    position: relative;
-    top: 160px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    width: 90%;
-  }
-
-  .hero-buttons {
-    position: relative;
-    top: 0;
-    justify-content: center;
-  }
-
-  .hero-image {
-    position: relative;
-    top: 200px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 420px;
-  }
-
-  .stats-frame,
-  .collab-frame,
-  .inbox-frame {
-    position: relative;
-    top: 260px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 24px;
-  }
-}
-@media (max-width: 768px) {
-  body {
-    height: auto;
-  }
-
-  .logo {
-    left: 20px;
-    top: 70px;
-  }
-
-  .english-btn,
-  .signin-btn {
-    display: none; /* mobile header simplification */
-  }
-
-  .hero-text-frame {
-    top: 140px;
-    gap: 24px;
-  }
-
-  .hero-text-frame h1 {
-    font-size: 32px;
-    line-height: 1.3;
-  }
-
-  .hero-text-frame p {
-    font-size: 15px;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .hero-buttons button {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .hero-image {
-    width: 90%;
-    top: 180px;
-  }
-
-  .stats-frame,
-  .collab-frame,
-  .inbox-frame {
-    width: 90%;
-  }
+.section-trust .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 
 /* =========================
    TRUST BADGE
 ========================= */
 .trust-badge {
-  position: absolute;
-  left: 529px;
-  top: 860px;
-
-  width: 382px;
-  height: 52px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -596,33 +546,156 @@ body {
   color: #060606;
   font-weight: 400;
 }
+
 /* =========================
    TRUSTED BRANDS IMAGE
 ========================= */
 .brands-image {
-  position: absolute;
-  left: 417px;
-  top: 944px;
-
   width: 606px;
   height: 36px;
-
   object-fit: contain;
 }
+
 /* =========================
    SECTION SEPARATOR
 ========================= */
 .section-separator {
-  position: absolute;
-  left: 100px;
-  top: 1065px;
-
-  width: calc(100% - 200px); /* centered with 100px margin both sides */
+  width: calc(100% - 200px);
   height: 1px;
+  margin: 0 100px;
 
   border: none;
   background-color: #3D3D3D;
-  opacity: 0.25; /* subtle like the screenshot */
+  opacity: 0.25;
+}
+
+/* =========================
+   RESPONSIVE - 1280px
+========================= */
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 60px;
+  }
+
+  .hero-visual {
+    flex: 0 0 450px;
+  }
+
+  .hero-image {
+    width: 380px;
+    height: auto;
+  }
+
+  .stats-frame {
+    left: -100px;
+  }
+
+  .inbox-frame {
+    right: 0;
+  }
+}
+
+/* =========================
+   RESPONSIVE - 1024px
+========================= */
+@media (max-width: 1024px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .hero-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content {
+    flex: none;
+    width: 90%;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .hero-text-frame {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    flex: none;
+    margin-top: 40px;
+    min-height: auto;
+  }
+
+  .hero-image {
+    width: 420px;
+    height: auto;
+  }
+
+  .stats-frame,
+  .collab-frame,
+  .inbox-frame {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    margin: 24px auto;
+  }
+
+  .section-hero {
+    padding-bottom: 60px;
+  }
+}
+
+/* =========================
+   RESPONSIVE - 768px
+========================= */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  .hero-text-frame h1 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .hero-text-frame p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .stats-frame,
+  .collab-frame,
+  .inbox-frame {
+    width: 90%;
+  }
+
+  .section-separator {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+  }
 }
 /* =========================
    SECOND PAGE TITLE (CENTERED)

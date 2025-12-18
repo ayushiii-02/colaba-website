@@ -1,0 +1,232 @@
+/* =========================
+   PRICING SECTION
+========================= */
+.section-pricing {
+  padding: 80px 0;
+}
+
+.pricing-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================
+   GRADIENT CARD
+========================= */
+.gradient-card {
+  width: 100%;
+  max-width: 1200px;
+  background: linear-gradient(90deg, #377DF6 0%, #6E6BFB 100%);
+  border-radius: 40px;
+  padding: 60px 40px 40px;
+  text-align: center;
+}
+
+/* =========================
+   PRICING HEADER
+========================= */
+.pricing-header {
+  margin-bottom: 40px;
+}
+
+.gradient-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+  line-height: 57.8px;
+  letter-spacing: -1.2px;
+}
+
+.gradient-subtitle {
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 57.8px;
+  letter-spacing: -1.2px;
+  margin-bottom: 16px;
+}
+
+.gradient-desc {
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* =========================
+   WHITE CARD
+========================= */
+.white-card {
+  background: #fff;
+  border-radius: 32px;
+  padding: 50px 60px 60px;
+}
+
+/* =========================
+   PRICING CARDS
+========================= */
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.price-card {
+  width: 320px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   PRICE HEADER
+========================= */
+.price-header {
+  background: #F1F7FF;
+  border: 1px solid #E5E7EB;
+  border-radius: 20px;
+  padding: 28px 24px;
+  margin-bottom: 24px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6B7280;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.plan-price {
+  font-size: 48px;
+  font-weight: 700;
+  color: #0A0A0A;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.plan-price span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6B7280;
+}
+
+.plan-desc {
+  font-size: 14px;
+  line-height: 22px;
+  color: #6B7280;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.plan-btn {
+  width: 100%;
+  padding: 14px 24px;
+  background: #377DF6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.plan-btn:hover {
+  background: #2563EB;
+}
+
+/* =========================
+   ACTIVE CARD (Agency)
+========================= */
+.price-card.active .price-header {
+  background: linear-gradient(135deg, #377DF6 0%, #6E6BFB 100%);
+  border: none;
+}
+
+.price-card.active .plan-name {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.price-card.active .plan-price {
+  color: #fff;
+}
+
+.price-card.active .plan-price span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.price-card.active .plan-desc {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.price-card.active .plan-btn {
+  background: #fff;
+  color: #377DF6;
+}
+
+.price-card.active .plan-btn:hover {
+  background: #F0F7FF;
+}
+
+/* =========================
+   FEATURES LIST
+========================= */
+.plan-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-features li {
+  position: relative;
+  padding-left: 28px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #374151;
+  margin-bottom: 12px;
+}
+
+.plan-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #377DF6;
+  font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gradient-title,
+  .gradient-subtitle {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .gradient-card {
+    padding: 40px 20px;
+  }
+
+  .white-card {
+    padding: 30px 20px;
+  }
+}
