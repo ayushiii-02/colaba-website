@@ -11,94 +11,98 @@
     </div>
   </div>
 
-  <!-- Feature Cards - Full Width (no container) -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
+  <!-- Feature Cards Slider -->
+  <div class="features-slider">
+    <div class="features-slider-container">
+      <div class="swiper-container featuresSwiper">
+        <div class="swiper-wrapper">
 
-      <!-- Card 1 -->
-      <div class="swiper-slide">
-        <div class="feature-card">
-          <div class="feature-icon icon-1">
-            <img src="assets/Frame 152.png" alt="Feature icon 1" />
+          <!-- Card 1 -->
+          <div class="swiper-slide feature-slide">
+            <div class="feature-card">
+              <div class="feature-icon icon-1">
+                <img src="assets/Frame 152.png" alt="Feature icon 1" />
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">AI Outreach</h3>
+                <p class="feature-desc">
+                  Find top creators and automate personalized outreach to scale faster with less manual work.
+                </p>
+                <a href="#" class="feature-link">
+                  Read more
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="feature-link-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="feature-content">
-            <h3 class="feature-title">AI Outreach</h3>
-            <p class="feature-desc">
-              Find top creators and automate personalized outreach to scale faster with less manual work.
-            </p>
-            <a href="#" class="feature-link">
-              Read more
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="feature-link-icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-              </svg>
-            </a>
+
+          <!-- Card 2 -->
+          <div class="swiper-slide feature-slide">
+            <div class="feature-card">
+              <div class="feature-icon icon-2">
+                <img src="assets/Frame 154.png" alt="Feature icon 2" />
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Creator Discovery</h3>
+                <p class="feature-desc">
+                  Use advanced filters to identify best-fit affiliates and focus on high-performing creators.
+                </p>
+                <a href="#" class="feature-link">
+                  Read more
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="feature-link-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
+
+          <!-- Card 3 -->
+          <div class="swiper-slide feature-slide">
+            <div class="feature-card">
+              <div class="feature-icon icon-3">
+                <img src="assets/Frame 156.png" alt="Feature icon 3" />
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Smart Tracking</h3>
+                <p class="feature-desc">
+                  Track GMV, orders, and creator performance in real time and scale what's working.
+                </p>
+                <a href="#" class="feature-link">
+                  Read more
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="feature-link-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="swiper-slide feature-slide">
+            <div class="feature-card">
+              <div class="feature-icon icon-4">
+                <img src="assets/Frame 158.png" alt="Feature icon 4" />
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Inbox Automation</h3>
+                <p class="feature-desc">
+                  Organize replies, automate follow-ups, and keep your outreach pipeline clean and efficient.
+                </p>
+                <a href="#" class="feature-link">
+                  Read more
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="feature-link-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-
-      <!-- Card 2 -->
-      <div class="swiper-slide">
-        <div class="feature-card">
-          <div class="feature-icon icon-2">
-            <img src="assets/Frame 154.png" alt="Feature icon 2" />
-          </div>
-          <div class="feature-content">
-            <h3 class="feature-title">Creator Discovery</h3>
-            <p class="feature-desc">
-              Use advanced filters to identify best-fit affiliates and focus on high-performing creators.
-            </p>
-            <a href="#" class="feature-link">
-              Read more
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="feature-link-icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="swiper-slide">
-        <div class="feature-card">
-          <div class="feature-icon icon-3">
-            <img src="assets/Frame 156.png" alt="Feature icon 3" />
-          </div>
-          <div class="feature-content">
-            <h3 class="feature-title">Smart Tracking</h3>
-            <p class="feature-desc">
-              Track GMV, orders, and creator performance in real time and scale what's working.
-            </p>
-            <a href="#" class="feature-link">
-              Read more
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="feature-link-icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="swiper-slide">
-        <div class="feature-card">
-          <div class="feature-icon icon-4">
-            <img src="assets/Frame 158.png" alt="Feature icon 4" />
-          </div>
-          <div class="feature-content">
-            <h3 class="feature-title">Inbox Automation</h3>
-            <p class="feature-desc">
-              Organize replies, automate follow-ups, and keep your outreach pipeline clean and efficient.
-            </p>
-            <a href="#" class="feature-link">
-              Read more
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="feature-link-icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 

@@ -1,0 +1,10 @@
+// Initialize Features Swiper
+const featuresSwiper = new Swiper('.featuresSwiper', {
+  spaceBetween: 20,
+  slidesPerView: 'auto',
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+});
